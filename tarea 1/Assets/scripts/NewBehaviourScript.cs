@@ -5,11 +5,11 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
 
-    private int MiNum = 5;
-    private float Deci = 10.5f;
-    private string Saludito = "Hola simple humano";
+    public int MiNum = 5;
+    public float Deci = 10.5f;
+    public string Saludito = "Hola simple humano";
     private string Pregunta = "¿que tal estas?";
-    private string Orden = "SUMEMOS";
+    public string Orden = "SUMEMOS";
     private bool Alive = true;
     
 
@@ -21,7 +21,8 @@ public class NewBehaviourScript : MonoBehaviour
         print(MiNum);
         print(Orden);
         print(Deci + MiNum);
-
+        
+        
 
 
     }
