@@ -14,7 +14,8 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         while (number < 500)
-        { print(saludo);
+        {
+            print(saludo);
             number++;
 
             if (number == 100)
@@ -31,12 +32,13 @@ public class NewBehaviourScript : MonoBehaviour
 
 
 
-        else {
-                print(despedida);
+            else
+            {
+
             }
 
         }
-
+        print(despedida);
     }
 
     // Update is called once per frame
