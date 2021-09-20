@@ -5,44 +5,19 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
 
-    int number = 0;
-    string saludo = "hi peter";
-    string respuesta = "BIENVENIDO A LOS JUEGOS DEL HAMBRE";
-    string respuesta1 = "¡¡¡SOY INEVITABLE !!!";
-    string despedida = "HA LLEGADO EL FINAL INSENSATO";
+    int Ramdon;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        for ( int number = 0;  number < 500; number++)
+        while (Ramdon != 10)
+        {
+            Ramdon = Random.Range(0, 20);
 
-
-        
-        { print(saludo);
-            
-
-            if (number == 100)
-            {
-                print(respuesta);
-                
-            }
-
-            else if (number == 200)
-            {
-
-                print(respuesta1);
-            }
-
-
-
-        else {
-                
-            }
-
+            print("El dado de la suerte ha sacado " + Ramdon);
         }
-        print(despedida);
-}
+    }
 
     // Update is called once per frame
     void Update()
