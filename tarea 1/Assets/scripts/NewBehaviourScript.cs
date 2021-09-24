@@ -5,18 +5,13 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
 
-    int Ramdon;
+   
 
 
     // Start is called before the first frame update
     void Start()
     {
-        while (Ramdon != 10)
-        {
-            Ramdon = Random.Range(0, 20);
-
-            print("El dado de la suerte ha sacado " + Ramdon);
-        }
+        Saludito("iuvi", 22);
     }
 
     // Update is called once per frame
@@ -24,4 +19,11 @@ public class NewBehaviourScript : MonoBehaviour
     {
         
     }
+
+     void Saludito(string nombre, int edad)
+{
+
+    print("Tenga buenos dias " + nombre + "su edad actual es " + edad);
+
+}
 }
