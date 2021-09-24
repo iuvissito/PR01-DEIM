@@ -35,8 +35,7 @@ public class NewBehaviourScript : MonoBehaviour
             }
             if (h > 23)
             {
-                h = 0;
-                day++;
+
                 print("BUENOS DIAS es el dia: " + day);
             }
 
@@ -45,17 +44,14 @@ public class NewBehaviourScript : MonoBehaviour
 
         }
 
-        
-    }
- // Update is called once per frame
-    void Update()
-    { 
-        
-    }
-    
-  
 
-  
+    }
+    // Update is called once per frame
+
 
 
 }
+  
+
+
+
