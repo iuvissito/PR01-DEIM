@@ -5,25 +5,29 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
 
-   
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Saludito("iuvi", 22);
+        StartCoroutine("Cuenta");
     }
+    IEnumerator Cuenta()
+    {
+        for (int n = 20; n >= 0; n--)
+        {
+            print(" contador :" + n);
+            yield return new WaitForSeconds(1f);
 
+
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        
+
+
+
     }
-
-     void Saludito(string nombre, int edad)
-{
-
-    print("Tenga buenos dias " + nombre + "su edad actual es " + edad);
-
-}
 }
